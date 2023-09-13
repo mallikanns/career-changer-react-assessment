@@ -1,6 +1,7 @@
 import TableBodyUser from "./TableBody-user";
 
-function TableUser() {
+function TableUser({mockEmployees}) {
+    // console.log(mockEmployees);
   return (
     <table>
       <thead>
@@ -10,7 +11,7 @@ function TableUser() {
           <th>Position</th>
         </tr>
       </thead>
-      <TableBodyUser />
+      <TableBodyUser mockEmployees={mockEmployees} />
     </table>
   );
 }

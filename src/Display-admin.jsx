@@ -1,13 +1,11 @@
-import HeaderAdmin from "./Header-admin"
 import TableAdmin from "./Table-admin"
 import Form from "./Form"
 
-const DisplayAdmin = () => {
+const DisplayAdmin = ({mockEmployees}) => {
     return (
         <div>
-            {/* <HeaderAdmin /> */}
             <Form />
-            <TableAdmin />
+            <TableAdmin mockEmployees={mockEmployees} />
         </div>
     )
 }

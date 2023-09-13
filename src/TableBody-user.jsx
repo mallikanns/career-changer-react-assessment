@@ -1,21 +1,8 @@
-function TableBodyUser() {
-  const testData = [
-    {
-      id: 0,
-      name: "mock",
-      lastname: "mocklastname",
-      position: "Manager",
-    },
-    {
-      id: 1,
-      name: "employee 1",
-      lastname: "em",
-      position: "Engineer",
-    },
-  ];
+function TableBodyUser({mockEmployees}) {
+    // console.log(mockEmployees);
   return (
     <tbody>
-      {testData.map((item) => {
+      {mockEmployees.map((item) => {
         return (
           <tr>
             <td>{item.name}</td>

@@ -1,11 +1,10 @@
-import HeaderUser from "./Header-user"
 import TableUser from "./Table-user"
 
-const DisplayUser = () => {
+const DisplayUser = ({mockEmployees}) => {
+    // console.log(mockEmployees);
     return (
         <div>
-            {/* <HeaderUser /> */}
-            <TableUser />
+            <TableUser mockEmployees={mockEmployees} />
         </div>
     )
 }

@@ -31,8 +31,8 @@ const Home = () => {
   const [employee, setEmployee] = useState();
   const handleClick = (value) => {
     setSector(value);
-    // <HeaderNormal sector={sector} />
   };
+  // console.log(mockEmployees);
 
   return (
     <Layout>
@@ -43,7 +43,7 @@ const Home = () => {
         </button>
         <button onClick={() => handleClick("admin")} className="home-button">Admin Home Sector</button>
       </div>
-      <Display sector={sector} />
+      <Display sector={sector} mockEmployees={mockEmployees} />
     </Layout>
   );
 };

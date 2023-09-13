@@ -1,7 +1,7 @@
 import TableBodyAdmin from "./TableBody-admin";
 import TableBody from "./TableBody-admin";
 
-function TableAdmin() {
+function TableAdmin({mockEmployees}) {
   return (
     <table>
       <thead>
@@ -12,7 +12,7 @@ function TableAdmin() {
           <th>Action</th>
         </tr>
       </thead>
-      <TableBodyAdmin />
+      <TableBodyAdmin mockEmployees={mockEmployees} />
     </table>
   );
 }

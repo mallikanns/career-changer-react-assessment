@@ -72,11 +72,12 @@ th {
   background-color: white;
   color: black;
   padding: 10px;
+  margin: 10px;
 }
 .save {
   color: white;
   background-color: rgb(99, 99, 239);
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
   width: 150px;
   border: 0.5px solid lightgrey;
