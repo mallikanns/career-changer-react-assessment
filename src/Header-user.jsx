@@ -7,14 +7,14 @@ function HeaderUser() {
         <h1>Generation Thailand</h1>
         <h1>Home - User Sector</h1>
       </div>
-      <div>
+      {/* <div>
         <Link to={'/user'}>
           <button className="home-button">User Home Sector</button>
         </Link>
         <Link to={'/admin'}>
           <button className="home-button">Admin Home Sector</button>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 }

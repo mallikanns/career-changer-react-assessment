@@ -1,8 +1,10 @@
 import Layout from "./Layout";
 import "./style.css";
 // import Header from "./Header-user";
-import HeaderNormal from "./Header-normal";
+import HeaderNormal from "./Header";
 import { useState } from "react";
+import Display from "./Display";
+import Header from "./Header";
 
 const mockEmployees = [
   {
@@ -30,20 +32,19 @@ const Home = () => {
   const [employee, setEmployee] = useState();
   const handleClick = (value) => {
     setSector(value);
+    // <HeaderNormal sector={sector} />
   };
 
   return (
     <Layout>
-      <div className="header">
-        <h1>Generation Thailand</h1>
-        <h1>React - Assessment</h1>
-      </div>
+      <Header sector={sector} />
       <div>
         <button onClick={() => handleClick("user")} className="home-button">
           User Home Sector
         </button>
         <button onClick={() => handleClick("admin")} className="home-button">Admin Home Sector</button>
       </div>
+      <Display sector={sector} />
     </Layout>
   );
 };
