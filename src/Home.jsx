@@ -1,7 +1,6 @@
+// import { createContext } from "react";
 import Layout from "./Layout";
 import "./style.css";
-// import Header from "./Header-user";
-import HeaderNormal from "./Header";
 import { useState } from "react";
 import Display from "./Display";
 import Header from "./Header";
